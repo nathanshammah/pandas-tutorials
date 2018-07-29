@@ -1,0 +1,9 @@
+name: pandas-tutorial
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.7
+  - pandas=0.23.3
+  - matplotlib=2.2
+  - jupyter=1.0
