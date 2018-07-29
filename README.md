@@ -3,8 +3,13 @@ pandas tutorial
 
 Materials for the pandas tutorial by @datapythonista.
 
-Installation
-------------
+Run online
+----------
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/datapythonista/pandas-tutorials/master)
+
+Local installation
+------------------
 
 Clone this repository from the terminal (Git is required):
 
