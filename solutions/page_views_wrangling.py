@@ -1,5 +1,7 @@
 import locale
 import glob
+import os
+import pandas
 
 
 locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
@@ -19,5 +21,5 @@ locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
                   'Entrances': lambda df: df['Entrances'].apply(locale.atoi),
                   'Bounce Rate': lambda df: df['Bounce Rate'].str.rstrip('%').astype(float),
                   '% Exit': lambda df: df['% Exit'].str.rstrip('%').astype(float)})
-       .to_parquet(os.path.join(DATA_DIR, 'pandas_website_views_2018.parquet'),
+       .to_parquet(os.path.join('data', 'pandas_page_views_2018.parquet'),
                    engine='pyarrow'))
